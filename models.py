@@ -6,5 +6,5 @@ class Base(DeclarativeBase):
 class Urls(Base):
     __tablename__ = "URLS"
 
-    full_url: Mapped[str] = mapped_column(primary_key=True)
-    short_url: Mapped[str]
+    short_url: Mapped[str] = mapped_column(primary_key=True)
+    full_url: Mapped[str]
